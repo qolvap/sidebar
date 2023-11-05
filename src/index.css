@@ -1,10 +1,4 @@
-/*
-=============== 
-Variables
-===============
-*/
 :root {
-  /* grey used for paragraphs */
   --clr-white: #fff;
   --clr-black: #222;
   --transition: all 0.3s linear;
@@ -15,11 +9,6 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
 
 *,
 ::after,
@@ -91,7 +80,6 @@ p {
   }
 }
 /*  global classes */
-
 /* section */
 .section {
   width: 90vw;
@@ -105,11 +93,7 @@ p {
   }
 }
 
-/*
-=============== 
-Home
-===============
-*/
+/* Home */
 
 main {
   min-height: 100vh;
@@ -162,11 +146,7 @@ main {
   background: transparent;
 }
 
-/*
-=============== 
-Modal
-===============
-*/
+/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -221,11 +201,7 @@ h3{
   color: black;
 }
 
-/*
-=============== 
-Sidebar
-===============
-*/
+/* Sidebar */
 .sidebar-header {
   display: flex;
   justify-content: space-between;
