@@ -3,38 +3,9 @@
 Variables
 ===============
 */
-
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -60,8 +31,8 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  background: whitesmoke;
+  color: grey;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -94,7 +65,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: #2F4F4F;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -153,7 +124,7 @@ main {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-grey-3);
+  color: #708090;
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
@@ -174,7 +145,7 @@ main {
 .btn {
   text-transform: uppercase;
   background: var(--clr-black);
-  color: var(--clr-white);
+  color: whitesmoke;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -187,7 +158,7 @@ main {
   margin: 0.5rem;
 }
 .btn:hover {
-  color: var(--clr-black);
+  color: black;
   background: transparent;
 }
 
@@ -234,16 +205,20 @@ Modal
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: red;
   cursor: pointer;
 }
 
 .close-modal-btn:hover{
-  color: var(--clr-red-light);
+  color: #ec645b;
 }
 
 p{
   margin-top: 50px;
+}
+
+h3{
+  color: black;
 }
 
 /*
@@ -261,14 +236,13 @@ Sidebar
   font-size: 1.75rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
-  color: var(--clr-red-dark);
+  color: red;
   margin-top: 0.2rem;
 }
 .close-btn:hover {
-  color: var(--clr-red-light);
+  color: #ec645b;
 }
 
 .links a {
@@ -277,18 +251,18 @@ Sidebar
   font-size: 1.25rem;
   text-transform: capitalize;
   padding: 1rem 1.5rem;
-  color: var(--clr-grey-3);
+  color: #808080;
   transition: var(--transition);
   letter-spacing: var(--spacing);
 }
 
 .links a:hover {
-  background: var(--clr-grey-10);
+  background: #B0C4DE;
   color: black;
 }
 .links a svg {
   font-size: 1.5rem;
-  color: var(--clr-grey-5);
+  color: #808080;
   margin-right: 1rem;
   transition: var(--transition);
 }
@@ -303,11 +277,11 @@ Sidebar
 .social-icons a {
   font-size: 1.5rem;
   margin: 0 0.5rem;
-  color: var(--clr-primary-5);
+  color: #4682B4;
   transition: var(--transition);
 }
 .social-icons a:hover {
-  color: var(--clr-primary-1);
+  color: #87CEFA ;
 }
 
 .sidebar {
